@@ -1,4 +1,6 @@
 import Link from "next/link";
+import HealthTracker from "./HealthCounter";
+import LevelTracker from "./LevelTracker";
 
 export default function Header() {
 	return (
@@ -29,6 +31,10 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
+			</div>
+			<div className="flex justify-between items-center mt-4">
+				<HealthTracker />
+				<LevelTracker />
 			</div>
 		</header>
 	);

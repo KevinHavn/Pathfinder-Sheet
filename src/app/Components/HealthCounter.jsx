@@ -24,21 +24,22 @@ const HealthTracker = () => {
 
 	return (
 		<div className="flex justify-between">
-			<label className="block mb-2 text-sm font-bold text-white">
-				Max Health:
-				<input
-					type="number"
-					value={maxHealth}
-					onChange={handleMaxHealthChange}
-					className="mt-1 block w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500"
-				/>
-			</label>
+			{" "}
 			<label className="block mb-2 text-sm font-bold text-white">
 				Current Health:
 				<input
 					type="number"
 					value={currentHealth}
 					onChange={handleCurrentHealthChange}
+					className="mt-1 block w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500"
+				/>
+			</label>
+			<label className="block mb-2 text-sm font-bold text-white">
+				Max Health:
+				<input
+					type="number"
+					value={maxHealth}
+					onChange={handleMaxHealthChange}
 					className="mt-1 block w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500"
 				/>
 			</label>

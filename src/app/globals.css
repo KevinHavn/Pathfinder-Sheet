@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+
+.action {
+  font-family: var(--font-pathfinder-icons);
+}
